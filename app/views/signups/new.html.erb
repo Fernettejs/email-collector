@@ -35,14 +35,9 @@
         
         
 
- <%= form_for :signupForm, class: "signupForm" do |f| %>
-  <%= f.label :first_name %>
-  <%= f.text_field :first_name, class: "shortInput" %> <br />
-
-  <%= f.label :email, "Email Address" %>
-  <%= f.text_field :email, class: "shortInput" %> <br />
-
-    <%= f.submit "Join", :class =>'btn'  %>
+<%= form_for(@signup) do |f| %>
+  <%= text_field :email, :placeholder => "Email" %>
+  <%= f.submit "Join", :class =>'btn' %> 
 <% end %>
       </div>
     </div>
