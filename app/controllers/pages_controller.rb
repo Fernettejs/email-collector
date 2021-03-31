@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
     def thanks
     end
-    # resources @signups
+    rescue @signup
   
   end
   
